@@ -1,4 +1,7 @@
 # calculadora-salario
+
+
+
 import tkinter as tk
 
 class CalculadoraSalario:
@@ -49,7 +52,7 @@ class CalculadoraSalario:
 
             salario_total = valor_hora * total_horas_trabalhadas
 
-            self.resultado_label.config(text=f"Salário total: R${salario_total:.2f}", fg="green")
+            self.resultado_label.config(text=f"Salário total: €{salario_total:.2f}", fg="green")
         except ValueError:
             self.resultado_label.config(text="Preencha todos os campos corretamente.", fg="red")
 
